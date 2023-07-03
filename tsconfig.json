@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "outDir": "bin",
+    "sourceMap": true,
+    "noEmitOnError": false,
+    "sourceRoot": ".",
+    "lib": [
+      "es2015",
+      "es2017.object",
+      "esnext.asynciterable"
+    ]
+  },
+  "include": [
+    "./*.ts"
+  ]
+
+}

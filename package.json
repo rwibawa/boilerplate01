@@ -1,0 +1,46 @@
+{
+  "name": "oauth2-server",
+  "version": "1.0.0",
+  "description": "oauth2 server",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "dev:ts": "nodemon -e ts,json,html --ignore log/ --exec node_modules/.bin/cross-env NODE_ENV=development node_modules/.bin/ts-node index.ts | bunyan",
+    "dev:ts:start": "bash -c \"cross-env ENV=development ts-node index.ts | bunyan\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rwibawa/oauth2-01.git"
+  },
+  "keywords": [
+    "oauth2"
+  ],
+  "author": "Ryan Wibawa <ryan.wibawa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rwibawa/oauth2-01/issues"
+  },
+  "homepage": "https://github.com/rwibawa/oauth2-01#readme",
+  "devDependencies": {
+    "@types/bunyan": "^1.8.8",
+    "@types/node": "^20.3.3",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "cross-env": "^7.0.3",
+    "koa": "^2.14.2",
+    "koa-body": "^6.0.1",
+    "koa-bunyan-logger": "^2.1.0",
+    "koa-ejs": "^4.3.0",
+    "koa-router": "^12.0.0"
+  },
+  "engines": {
+    "node": "18.16.1",
+    "npm": "~9.5.1"
+  }
+}
